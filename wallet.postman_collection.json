@@ -1,0 +1,195 @@
+{
+	"info": {
+		"_postman_id": "6a626f16-3d8f-4134-a9a8-5cb9bc775070",
+		"name": "JULO",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Init Wallet",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"customer_xid\": \"ea0212d3-abd6-406f-8c67-868e814a2436\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/v1/init",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"init"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Enable Wallet",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjcmVhdGVkX2F0IjoiMjAyMC0xMS0yNlQxMjo1MToxMS44NDkyMzc4NDhaIiwicmFuZG9tIjo1NTc3MDA2NzkxOTQ3Nzc5NDEwfQ.L5fK4tepkW04OWLByTveGU9LTlNNggFrIMQGTwX06Vw",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/api/v1/wallet",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"wallet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Disable Wallet",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjcmVhdGVkX2F0IjoiMjAyMC0xMS0yNlQxMjo1MToxMS44NDkyMzc4NDhaIiwicmFuZG9tIjo1NTc3MDA2NzkxOTQ3Nzc5NDEwfQ.L5fK4tepkW04OWLByTveGU9LTlNNggFrIMQGTwX06Vw",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/api/v1/wallet",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"wallet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Wallet",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjcmVhdGVkX2F0IjoiMjAyMC0xMS0yNlQxMzoyNDozMi42NTY3NjU0NzhaIiwicmFuZG9tIjo1NTc3MDA2NzkxOTQ3Nzc5NDEwfQ.0pwKlymMP22DuFJ3hlxtdDjzn4HeltF_6XPWjAksfEY",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/api/v1/wallet",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"wallet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deposit Balance",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjcmVhdGVkX2F0IjoiMjAyMC0xMS0yNlQxMzoyNDozMi42NTY3NjU0NzhaIiwicmFuZG9tIjo1NTc3MDA2NzkxOTQ3Nzc5NDEwfQ.0pwKlymMP22DuFJ3hlxtdDjzn4HeltF_6XPWjAksfEY",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "multipart/form-data",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"amount\": 100000,\n    \"reference_id\": \"50535246-dcb2-4929-8cc9-004ea06f524\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/v1/wallet/deposits",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"wallet",
+						"deposits"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Withdrawal Balance",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjcmVhdGVkX2F0IjoiMjAyMC0xMS0yNlQxMzoyNDozMi42NTY3NjU0NzhaIiwicmFuZG9tIjo1NTc3MDA2NzkxOTQ3Nzc5NDEwfQ.0pwKlymMP22DuFJ3hlxtdDjzn4HeltF_6XPWjAksfEY",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"amount\": 100000,\n    \"reference_id\": \"50535246-dcb2-4929-8cc9-004ea06f524\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/v1/wallet/withdrawals",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"wallet",
+						"withdrawals"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

@@ -1,0 +1,10 @@
+{
+    "db": {
+        "host" : "localhost",
+        "port" : "5456",
+        "user" : "postgres",
+        "pass" : "abcde",
+        "name" : "wallet",
+        "sslmode": "disable"
+    }
+}
