@@ -8,7 +8,7 @@ https://documenter.getpostman.com/view/8411283/SVfMSqA3?version=latest#cd25ab7d-
 1. Clone this repo
 2. go build
 3. docker-compose -f ./localenv/docker-compose.yml up -d
-4. ./wallet
+4. ./julo
 
 ## How to run
 

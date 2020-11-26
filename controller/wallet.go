@@ -5,8 +5,8 @@ import (
 	"errors"
 	"net/http"
 
-	"github.com/fgunawan1995/julo/wallet/model"
-	"github.com/fgunawan1995/julo/wallet/usecase"
+	"github.com/fgunawan1995/julo/model"
+	"github.com/fgunawan1995/julo/usecase"
 )
 
 func InitWallet(w http.ResponseWriter, r *http.Request) {

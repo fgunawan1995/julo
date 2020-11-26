@@ -6,7 +6,7 @@ import (
 	"time"
 
 	"github.com/dgrijalva/jwt-go"
-	"github.com/fgunawan1995/julo/wallet/model"
+	"github.com/fgunawan1995/julo/model"
 	"github.com/pkg/errors"
 
 	cache "github.com/patrickmn/go-cache"

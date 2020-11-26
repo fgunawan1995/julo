@@ -3,9 +3,9 @@ package usecase
 import (
 	"time"
 
-	"github.com/fgunawan1995/julo/wallet/dal/cache"
-	"github.com/fgunawan1995/julo/wallet/dal/db"
-	"github.com/fgunawan1995/julo/wallet/model"
+	"github.com/fgunawan1995/julo/dal/cache"
+	"github.com/fgunawan1995/julo/dal/db"
+	"github.com/fgunawan1995/julo/model"
 )
 
 func InitWallet(p model.InitWalletRequest) (model.InitWalletResponse, error) {

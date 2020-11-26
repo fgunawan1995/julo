@@ -3,8 +3,8 @@ package usecase
 import (
 	"time"
 
-	"github.com/fgunawan1995/julo/wallet/dal/db"
-	"github.com/fgunawan1995/julo/wallet/model"
+	"github.com/fgunawan1995/julo/dal/db"
+	"github.com/fgunawan1995/julo/model"
 )
 
 func DepositBalance(p model.DepositRequest, customerID string) (model.Deposit, error) {

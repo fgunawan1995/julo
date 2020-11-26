@@ -3,7 +3,7 @@ package model
 import (
 	"fmt"
 
-	"github.com/fgunawan1995/julo/wallet/config"
+	"github.com/fgunawan1995/julo/config"
 
 	"github.com/jmoiron/sqlx"
 	_ "github.com/lib/pq" //using postgres

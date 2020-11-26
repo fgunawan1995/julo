@@ -8,8 +8,8 @@ import (
 
 	"context"
 
-	"github.com/fgunawan1995/julo/wallet/dal/cache"
-	"github.com/fgunawan1995/julo/wallet/model"
+	"github.com/fgunawan1995/julo/dal/cache"
+	"github.com/fgunawan1995/julo/model"
 )
 
 func ValidateJWT(next http.HandlerFunc) http.HandlerFunc {

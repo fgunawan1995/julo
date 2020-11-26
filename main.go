@@ -11,10 +11,10 @@ import (
 	"github.com/gorilla/mux"
 	"github.com/rs/cors"
 
-	"github.com/fgunawan1995/julo/wallet/config"
-	"github.com/fgunawan1995/julo/wallet/controller"
-	"github.com/fgunawan1995/julo/wallet/middleware"
-	"github.com/fgunawan1995/julo/wallet/model"
+	"github.com/fgunawan1995/julo/config"
+	"github.com/fgunawan1995/julo/controller"
+	"github.com/fgunawan1995/julo/middleware"
+	"github.com/fgunawan1995/julo/model"
 )
 
 func main() {

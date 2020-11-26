@@ -1,7 +1,7 @@
 package db
 
 import (
-	"github.com/fgunawan1995/julo/wallet/model"
+	"github.com/fgunawan1995/julo/model"
 	"github.com/jmoiron/sqlx"
 )
 

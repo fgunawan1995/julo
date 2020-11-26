@@ -1,4 +1,4 @@
-module github.com/fgunawan1995/julo/wallet
+module github.com/fgunawan1995/julo
 
 go 1.13
 
